@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "New to that!"
+date:   2021-02-01
+categories: personal
+---
+
+# Welcome
+
+I have always struggled with web technologies, so this is going to be fun!
