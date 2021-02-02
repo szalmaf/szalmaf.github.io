@@ -12,3 +12,9 @@ web-report/
 
 # macOS
 .DS_Store
+
+# jekyll
+.jekyll-cache/
+
+# Site generation
+_site/
