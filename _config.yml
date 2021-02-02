@@ -1,8 +1,8 @@
 # Site settings
 exclude: [README.md]
 title: Ferenc Szalma
-email: mye@ma.il
-github: todo
+email: szalmaf@gmail.com
+github: https://github.com/szalmaf
 scholar_id: EcN9o7kAAAAJ
 description: > # this symbol means ignore newlines until "baseurl:"
     Here you will find details about my work.
