@@ -1,7 +1,7 @@
 ---
 layout: photolist
 title: ExamplePage2
-menu: yes
+menu: no
 ---
 
 You can also use yml data files using a simple scripting language. See the source at ./example2.md

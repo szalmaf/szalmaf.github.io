@@ -1,7 +1,7 @@
 ---
 layout: default
 title: ExamplePage1
-menu: yes
+menu: no
 ---
 
 You can create pages in markdown. With all the usual stuff. For instance, you can add 
