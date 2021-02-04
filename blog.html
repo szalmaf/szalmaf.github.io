@@ -5,25 +5,82 @@ menu: yes
 order: 1
 ---
 
+<style>
+
+  .thumbnail {
+    box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 3px 3px rgba(0,0,0,0.23);
+  }
+  .thumbnail:hover {
+    box-shadow: 0 12px 24px rgba(0,0,0,0.19), 0 8px 8px rgba(0,0,0,0.23);
+  }
+
+  .fullCard {
+    width: 750px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 5px;
+    padding: 4px;
+
+  }
+  .cardContent {
+    padding: 10px;
+
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+</style>
+
+
+
 <div class="home">
 
-  <!-- <h1 class="page-heading">Blog</h1> -->
+<!-- Thumbnails of blogposts: -->
 
-  <a href="./_posts/example.markdown"></a>
+<!-- #################################################################################### -->
+  <div class="fullCard thumbnail" >
+    <div class="cardContent">
+  
+        <h1 style="font-size:28px;">Stochastic Volatility Geometric Brownian Motion</h1>
+        <h2 style="font-size:20px;">A Monte Carlo Study</h2>
+  
+        <video width="300" height="auto" style="float: right; margin-left: 15px;" loop autoplay muted>
+           <!-- <source src="../resources/posts/xxx/yyy.mp4" type="video/mp4"> -->
+        </video>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.tag %} :: {{ post.tag }}{% endif %}{% if post.author %} • {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}</span>
+        <br/>
+        <br/>
+        <span style="font-size:15px;">
+            In this post we show how stochastic processes differ when the volatility of the process 
+            is not constant but itself a Brownian motion. The stochastic volatility model is 
+            fundamental in finance since
+          <ul>
+            <li>it is a way of relaxing the Black-Scholes model's constant volatility assumption</li>
+            <li>accounts for a long observed tendency of the volatility of financial instruments (stocks or bonds) to move around its mean volatility</li>
+            <li>can better reproduce option's implied volatility surface, i.e. smiles and smirks</li>
+          </ul>
+        </span>
+  
+        <a class="pull-right" href="/posts/stochastic-volatility-monte-carlo.html" onMouseOver="document.readmore5.src='../resources/posts/buttons/button_read_more_push-min.png';" onMouseOut="document.readmore5.src='../resources/posts/buttons/button_read_more-min.png';">
+        <img src="/resources/posts/buttons/button_read_more-min.png" name="readmore5" width=120px class="pull-right"></a>
+        <!-- <a class="pull-right" href="https://arxiv.org/pdf/xxxx.xxxxx.pdf" onMouseOver="document.readpaper5.src='../resources/posts/buttons/button_read_paper_push-min.png';" onMouseOut="document.readpaper5.src='../resources/posts/buttons/button_read_paper-min.png';">
+        <img src="../resources/posts/buttons/button_read_paper-min.png" name="readpaper5" width=120px class="pull-right"></a>
+        <a class="pull-right" href="https://github.com/szalmaf/..." onMouseOver="document.viewcode5.src='../resources/posts/buttons/button_view_code_push-min.png';" onMouseOut="document.viewcode5.src='../resources/posts/buttons/button_view_code-min.png';">
+        <img src="../resources/posts/buttons/button_view_code-min.png" name="viewcode5" width=120px></a> -->
+  
+        <span style="font-size:15px; text-align: right; float: right; color:gray">June 2019</span>
+  
+    </div>
+  </div>
+  
+<!-- #################################################################################### -->
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
 
-  </ul>
 
-  <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
+
 
 </div>
