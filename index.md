@@ -7,6 +7,9 @@ layout: default
 
 I am interested in machine learning applied in finance, physics and real-life applications.
 
+
+PAGE UNDER CONSTRUCTION!
+
 <!-- ## <span style="color:darkblue">News </span> -->
 
 <!-- * This cool [thing](https://szalmaf.github.io)
